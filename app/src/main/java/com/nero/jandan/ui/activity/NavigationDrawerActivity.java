@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import com.nero.jandan.JanDanApplication;
 import com.nero.jandan.R;
 import com.nero.jandan.injector.component.ApplicationComponent;
-import com.nero.jandan.ui.fragment.FreshNewsPostsFragment;
+import com.nero.jandan.ui.fragment.MainFragment;
 
 public class NavigationDrawerActivity extends BaseActivity{
 
@@ -21,7 +21,7 @@ public class NavigationDrawerActivity extends BaseActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-
+//		getSupportFragmentManager().beginTransaction().replace(R.id.container, new MainFragment()).commit();
 		freshUI();
 	}
 
@@ -29,10 +29,10 @@ public class NavigationDrawerActivity extends BaseActivity{
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-		Fragment fragment = fragmentManager.findFragmentByTag(FreshNewsPostsFragment.TAG);
+		Fragment fragment = fragmentManager.findFragmentByTag(MainFragment.TAG);
 		if(fragment == null){
-			fragment = new FreshNewsPostsFragment();
-			fragmentTransaction.add(R.id.container,fragment,FreshNewsPostsFragment.TAG);
+			fragment = new MainFragment();
+			fragmentTransaction.add(R.id.container,fragment,MainFragment.TAG);
 		}else{
 			fragmentTransaction.attach(fragment);
 		}

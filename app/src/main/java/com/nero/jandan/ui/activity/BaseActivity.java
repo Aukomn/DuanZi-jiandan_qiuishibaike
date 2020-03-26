@@ -33,7 +33,7 @@ public abstract class BaseActivity extends AppCompatActivity{
 		super.onCreate(savedInstanceState);
 
 		setContentView(getContentViewLayoutId());
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
 		mToolbar = (Toolbar) findViewById(R.id.actionbarToolbar);
 		setupActionBar();

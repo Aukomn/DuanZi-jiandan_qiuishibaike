@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RxJanDan.iml" filepath="$PROJECT_DIR$/RxJanDan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/RxJanDan-app.iml" filepath="$PROJECT_DIR$/app/RxJanDan-app.iml" group="RxJanDan/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace-RxJanDan.iml" filepath="$PROJECT_DIR$/workspace-RxJanDan.iml" group="RxJanDan" />
     </modules>
   </component>
 </project>
